@@ -460,7 +460,7 @@ mappings = {
         "config": {
             "device_class": "weather",
             "name": "UVI Index",
-            "unit_of_measurement": "UVI Index",
+            "unit_of_measurement": "UV Index",
             "value_template": "{{ value|int }}"
         }
     },
