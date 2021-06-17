@@ -443,23 +443,12 @@ mappings = {
         }
     },
 
-    "uv": {
+    "uvi": {
         "device_type": "sensor",
         "object_suffix": "uv",
         "config": {
             "device_class": "weather",
             "name": "UV Index",
-            "unit_of_measurement": "UV Index",
-            "value_template": "{{ value|int }}"
-        }
-    },
-
-    "uvi": {
-        "device_type": "sensor",
-        "object_suffix": "uvi",
-        "config": {
-            "device_class": "weather",
-            "name": "UVI Index",
             "unit_of_measurement": "UV Index",
             "value_template": "{{ value|int }}"
         }
