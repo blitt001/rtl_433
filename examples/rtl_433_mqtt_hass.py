@@ -229,7 +229,6 @@ mappings = {
         "device_type": "sensor",
         "object_suffix": "WS",
         "config": {
-            "device_class": "weather",
             "name": "Wind Speed",
             "unit_of_measurement": "km/h",
             "value_template": "{{ value|float }}"
@@ -240,7 +239,6 @@ mappings = {
         "device_type": "sensor",
         "object_suffix": "WS",
         "config": {
-            "device_class": "weather",
             "name": "Wind Speed",
             "unit_of_measurement": "mi/h",
             "value_template": "{{ value|float }}"
@@ -425,9 +423,9 @@ mappings = {
         "device_type": "sensor",
         "object_suffix": "lux",
         "config": {
-            "device_class": "weather",
+            "device_class": "illuminance",
             "name": "Outside Luminancee",
-            "unit_of_measurement": "lux",
+            "unit_of_measurement": "lx",
             "value_template": "{{ value|int }}"
         }
     },
@@ -447,7 +445,6 @@ mappings = {
         "device_type": "sensor",
         "object_suffix": "uv",
         "config": {
-            "device_class": "weather",
             "name": "UV Index",
             "unit_of_measurement": "UV Index",
             "value_template": "{{ value|int }}"
