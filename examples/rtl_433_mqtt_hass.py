@@ -251,7 +251,7 @@ mappings = {
         "config": {
             "name": "Wind Average",
             "unit_of_measurement": "km/h",
-            "value_template": "{{ float(value|float) * 3.6 | round(2) }}"
+            "value_template": "{{ (float(value|float) * 3.6) | round(2) }}"
         }
     },
 
@@ -261,7 +261,7 @@ mappings = {
         "config": {
             "name": "Wind Speed",
             "unit_of_measurement": "km/h",
-            "value_template": "{{ float(value|float) * 3.6 }}"
+            "value_template": "{{ (float(value|float) * 3.6) | round(2) }}"
         }
     },
 
@@ -281,7 +281,7 @@ mappings = {
         "config": {
             "name": "Wind max",
             "unit_of_measurement": "km/h",
-            "value_template": "{{ float(value|float) * 3.6 | round(2) }}"
+            "value_template": "{{ (float(value|float) * 3.6) | round(2) }}"
         }
     },
 
@@ -291,7 +291,7 @@ mappings = {
         "config": {
             "name": "Gust Speed",
             "unit_of_measurement": "km/h",
-            "value_template": "{{ float(value|float) * 3.6 }}"
+            "value_template": "{{ (float(value|float) * 3.6) | round(2) }}"
         }
     },
 
@@ -443,9 +443,19 @@ mappings = {
 
     "uvi": {
         "device_type": "sensor",
-        "object_suffix": "uv",
+        "object_suffix": "uvi",
         "config": {
             "name": "UV Index",
+            "unit_of_measurement": "UV Index",
+            "value_template": "{{ value|int }}"
+        }
+    },
+
+    "uv": {
+        "device_type": "sensor",
+        "object_suffix": "uv",
+        "config": {
+            "name": "UVA",
             "unit_of_measurement": "UV Index",
             "value_template": "{{ value|int }}"
         }
