@@ -436,9 +436,9 @@ mappings = {
         "device_type": "sensor",
         "object_suffix": "light_lux",
         "config": {
-            "device_class": "weather",
+            "device_class": "illuminance",
             "name": "Outside Luminancee",
-            "unit_of_measurement": "lux",
+            "unit_of_measurement": "lx",
             "value_template": "{{ float(value|float) | round(0) }}"
         }
     },
