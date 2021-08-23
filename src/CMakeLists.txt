@@ -86,6 +86,7 @@ add_library(r_433 STATIC
     devices/fineoffset.c
     devices/fineoffset_wh1050.c
     devices/fineoffset_wh1080.c
+    devices/fineoffset_wh31l.c
     devices/flex.c
     devices/fordremote.c
     devices/fs20.c
@@ -163,7 +164,8 @@ add_library(r_433 STATIC
     devices/simplisafe.c
     devices/smoke_gs558.c
     devices/solight_te44.c
-    devices/somfy.c
+    devices/somfy_iohc.c
+    devices/somfy_rts.c
     devices/springfield.c
     devices/steelmate.c
     devices/tfa_30_3196.c

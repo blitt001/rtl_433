@@ -401,7 +401,6 @@ mappings = {
         "device_type": "sensor",
         "object_suffix": "D",
         "config": {
-            "device_class": "depth",
             "name": "Depth",
             "unit_of_measurement": "cm",
             "value_template": "{{ value|float }}"

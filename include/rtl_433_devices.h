@@ -196,6 +196,8 @@
     DECL(tpms_hyundai_vdo) \
     DECL(rojaflex) \
     DECL(marlec_solar) \
+    DECL(somfy_iohc) \
+    DECL(fineoffset_wh31l) \
 
     /* Add new decoders here. */
 
